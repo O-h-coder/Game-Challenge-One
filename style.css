@@ -450,4 +450,43 @@ nav .hid-links:hover ~ .links {
   box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.4);
   transform: scale(1.1);
 }
-
+/* Section Footer */
+footer {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+footer svg {
+  fill: white;
+  transition: 0.4s;
+}
+footer .links {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+footer .links ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+footer .links ul li:hover svg {
+  fill: #b600b0;
+}
+footer .calling {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 22px;
+}
+footer .calling a {
+  text-decoration: none;
+  color: white;
+}
+footer .calling a:hover {
+  color: #b600b0;
+}
