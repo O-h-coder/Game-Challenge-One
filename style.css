@@ -159,3 +159,100 @@ nav .hid-links:hover ~ .links {
     flex-direction: column;
   }
 }
+/* Section Heros */
+.hero {
+  padding: 20px 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 0.5)
+  );
+  color: white;
+}
+.hero .container {
+  margin: 20px auto;
+  width: 95%;
+  height: 100%;
+  padding: 20px;
+  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+.hero .container .card {
+  position: relative;
+}
+.hero .container .card .back {
+  border-radius: 20px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 0.5s;
+}
+.hero .container .card .info-txet {
+  position: absolute;
+  padding: 15px;
+  border-radius: 20px;
+  bottom: 10px;
+  transition: 0.5s;
+  opacity: 0;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+.hero .container .card:hover .back {
+  filter: blur(5px);
+}
+.hero .container .card:hover .info-txet {
+  bottom: 0;
+  opacity: 1;
+  z-index: 1;
+}
+.hero .container .card:nth-child(1) .back {
+  background-image: url("image/venom.jpg");
+}
+.hero .container .card:nth-child(2) .back {
+  background-image: url("image/demon.jpg");
+}
+.hero .container .card:nth-child(3) .back {
+  background-image: url("image/skilton.jpg");
+}
+.hero .container .card:nth-child(4) .back {
+  background-image: url("image/shadow.jpg");
+}
+.hero .container .card:nth-child(5) .back {
+  background-image: url("image/sung.jpg");
+}
+.hero .container .card:nth-child(6) .back {
+  background-image: url("image/Fire.jpg");
+}
+.hero .container .card:nth-child(7) .back {
+  background-image: url("image/avanger.jpg");
+}
+.hero .info {
+  padding: 12px 25px;
+  border-radius: 10px;
+  transition: 0.3s;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+.hero .info:hover {
+  transform: scale(1.1);
+}
+@media (max-width: 768px) {
+  .hero .container {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  }
+  .hero .container .card .info-txet {
+    font-size: 10px;
+    padding: 10px;
+  }
+}
