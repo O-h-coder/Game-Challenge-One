@@ -405,3 +405,49 @@ nav .hid-links:hover ~ .links {
     height: 45px;
   }
 }
+/* Section Testimonials */
+.testimonials {
+  padding: 20px 0;
+  display: flex;
+  gap: 20px;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(
+    to top,
+    rgb(0, 0, 0),
+    rgba(181, 53, 177, 0.892)
+  );
+  color: white;
+}
+.testimonials .container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 50px;
+  width: 95%;
+}
+.testimonials .container .user {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 20px;
+  transition: 0.3s;
+}
+.testimonials .container .user img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.testimonials .container .user .user-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.testimonials .container .user:hover {
+  box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.4);
+  transform: scale(1.1);
+}
+
