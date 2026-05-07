@@ -9,8 +9,8 @@ function changeSlide(el, title, desc) {
   currentBg.style.opacity = "0";
   current = current === 1 ? 2 : 1;
   document.getElementById("title").innerText = title;
-  document.getElementById("dosc").innerText = desc;
+  document.getElementById("desc").innerText = desc;
   let imgs = document.querySelectorAll(".imagesimg");
   imgs.forEach((img) => img.classList.remove("active"));
-  element.classList.add("active");
+  el.classList.add("active");
 }

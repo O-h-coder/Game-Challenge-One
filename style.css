@@ -431,9 +431,9 @@ nav .hid-links:hover ~ .links {
   border-radius: 20px;
   border: 2px solid rgba(255, 255, 255, 0.1);
   display: flex;
-  gap: 20px;
+  gap: 10px;
   align-items: center;
-  padding: 20px;
+  padding: 10px;
   transition: 0.3s;
 }
 .testimonials .container .user img {
